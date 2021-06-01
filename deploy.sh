@@ -28,12 +28,12 @@ kubectl apply -f aks/2-db
 kubectl apply -f aks/3-nginx-app
 
 # Comando pra ver tudo o que tem no namespace e poder pegar o IP do service mysql
-# kubectl get all -n aulainfrakubernetes
+kubectl get all -n aulainfrakubernetes
 
 # Comando pra acessar o pod do nginx
-#kubectl exec -it nginx -- sh
+kubectl exec -it nginx -- sh
 
-#Comandos para executar dentro do nginx
-# apt-get update
-# apt-get install inetutils-ping
-# ping <IP DO SERVICE MYSQL>
+# Comandos para executar dentro do nginx
+apt-get update
+apt-get install inetutils-ping
+ping <IP DO SERVICE MYSQL>
